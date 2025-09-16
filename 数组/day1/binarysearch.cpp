@@ -17,11 +17,11 @@ int Solution::search(vector<int>& nums, int target)
     {
         middle = (left + right)/2;
 
-        if(nums[middle]>target)
+        if(nums[middle] > target)
         {
             right = middle - 1;
         }
-        else if(nums[middle]<target)
+        else if(nums[middle] < target)
         {
             left = middle;
         }
